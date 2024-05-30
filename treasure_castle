@@ -1,0 +1,44 @@
+print('''
+*******************************************************************************
+
+
+                              ,.=,,==. ,,_
+             _ ,====, _    |I|`` ||  `|I `|
+            |`I|    || `==,|``   ^^   ``  |
+            | ``    ^^    ||_,===TT`==,,_ |
+            |,==Y``Y==,,__| \L=_-`'   +J/`
+             \|=_  ' -=#J/..-|=_-     =|
+              |=_   -;-='`. .|=_-     =|----T--,
+              |=/\  -|=_-. . |=_-/^\  =||-|-|::|____
+              |=||  -|=_-. . |=_-| |  =|-|-||::\____
+              |=LJ  -|=_-. . |=_-|_| =||-|-|:::::::
+              |=_   -|=_-_.  |=_-     =|-|-||:::::::
+              |=_   -|=//^\. |=_-     =||-|-|:::::::
+              |/&_,_-|=||  | |=_-     =|-|-||:::::::
+              | |  --||||  | |=_-     =||-|-|%::::%
+              |     ',%||  | |=_-     =||-|-|%::::::
+  
+*******************************************************************************
+''')
+print("Welcome to Treasure Castle.")
+print("Your mission is to find the treasure inside the castle.")
+
+#Write your code below this line 👇
+
+choice1 = input("You are at castle. Where do you want to go? Type 'door' or 'window'\n").lower()
+if choice1 == "door":
+  choice2 = input("You are inside the castle. There is a hallway and a staircase. Which will you go through? Type 'hallway' or 'staircase' \n").lower()
+  if choice2 == "staircase":
+    choice3 = input("You see a knight guarding over a room where the treasure lies. Type 'run' to run away from the castle. Type 'negotiate' to bargain with the knight. Type 'fight' to fight the knight\n").lower()
+    if choice3 == "run":
+      print("You a were slain on your way out of the castle. Don't be a coward. Game Over.")
+    elif choice3 == "negotiate":
+      print("You were slain by the knight. Knights don't negotiate. Game over")
+    elif choice3 == "fight":
+      print("The Knight acknowledged your bravery and hands over treasure. It was a test of courage. Congrats, You Win!")
+    else:
+      print("You chose an irrelevant choice that didn\'t help you. Game Over.")
+  else:
+    print("You get attacked by hidden death traps. Game Over.")
+else:
+  print("You were slain by knights guarding the windows. Game Over.")
